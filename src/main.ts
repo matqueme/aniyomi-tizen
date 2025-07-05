@@ -42,4 +42,15 @@ app.use(pinia);
 app.use(i18n);
 app.use(router);
 app.use(vueSpatialNavigation, spatialNavConfig);
+
+// Initialiser les extensions après que l'app soit montée
 app.mount('#app');
+
+// Initialisation des extensions
+import { useExtensionsStore } from '@/stores/extensions';
+const extensionsStore = useExtensionsStore();
+
+// Chargement initial du manifest
+extensionsStore.loadManifest().catch((error) => {
+  console.error('Erreur lors du chargement initial des extensions:', error);
+});

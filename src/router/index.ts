@@ -3,6 +3,7 @@ import HomePage from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
 import AnimeDetail from '@/views/AnimeDetail.vue';
 import VideoWatch from '@/views/VideoWatch.vue';
+import ExtensionsTest from '@/views/ExtensionsTest.vue';
 import SpatialNavigation from 'vue-spatial-nav/lib/spatial_navigation';
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/watch/:animeId/:episode',
       name: 'VideoWatch',
       component: VideoWatch,
+    },
+    {
+      path: '/extensions-test',
+      name: 'ExtensionsTest',
+      component: ExtensionsTest,
     },
     // À ajouter plus tard :
     // {

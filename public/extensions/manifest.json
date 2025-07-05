@@ -1,0 +1,12 @@
+[
+  {
+    "id": "animesama",
+    "name": "Anime-Sama",
+    "version": "1.0.0",
+    "bundleUrl": "/extensions/bundles/animesama.bundle.js",
+    "lang": "fr",
+    "nsfw": false,
+    "baseUrl": "https://anime-sama.fr",
+    "description": "Extension pour scraper le site Anime-Sama en français"
+  }
+]
